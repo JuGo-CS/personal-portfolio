@@ -1,0 +1,65 @@
+body {
+    background-color: #D8D9DE;
+    font-family: 'Montserrat', 'Poppins', 'Raleway', 'Inter', 'DM Sans', 'Nunito', 'Urbanist', 'Work Sans', sans-serif;
+    height: 10000px;
+    margin: 0;
+    padding: 0;
+
+    .header{
+        background-color: #35393E;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        /* align-items: center; */
+
+        #website_logo{
+            position: relative;
+            top: 10px;
+            left: 20px;
+            height: 45px;
+            width: 180px;
+        } 
+
+        nav {
+            font-size: 20px; /* Example using pixels */
+            font-weight: 200;
+        }
+
+        ul {
+            list-style-type: none; /* Removes the bullet points */
+            /* padding: 0;            Removes default padding */
+            /* margin: 0;             Removes default margins */ 
+            height: 30px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        
+            li a{
+                text-decoration: none;
+                padding: 0 30px;
+                color: white;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    .home_section{
+        height: 850px;
+        width: 100%;
+        background-color: #000000;
+
+        background-image: url('images/home_background.png'); 
+
+        /* 2. Control image repetition (optional, but recommended) */
+        background-repeat: no-repeat; /* Prevents the image from tiling */
+
+        /* 3. Position the image (optional) */
+        background-position: center; /*Centers the image*/
+
+        /* 4. Scale the image (optional) */
+        background-size: cover;
+    }
+}
+
