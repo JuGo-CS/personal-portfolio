@@ -1,9 +1,41 @@
+/* *{
+    border: 2px solid red;
+} */
+ 
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    transform: scaleY(0.9);
+}
+
+h1{
+    font-size: 96px;
+    font-weight: 500;
+}
+
+h2{
+    font-size: 96px;
+    font-weight: 400;
+}
+
+h3{
+    font-size: 34px;
+    font-weight: 300;
+}
+
+h4{
+    font-size: 28px;
+    font-weight: 250;
+}
+
 body {
     background-color: #D8D9DE;
     font-family: 'Montserrat', 'Poppins', 'Raleway', 'Inter', 'DM Sans', 'Nunito', 'Urbanist', 'Work Sans', sans-serif;
     height: 10000px;
     margin: 0;
     padding: 0;
+    color: white;
+    
 
     .header{
         background-color: #35393E;
@@ -12,12 +44,11 @@ body {
         display: flex;
         justify-content: space-between;
         padding: 5px;
-        /* align-items: center; */
 
         #website_logo{
             position: relative;
             top: 10px;
-            left: 20px;
+            left: 15px;
             height: 45px;
             width: 180px;
         } 
@@ -51,15 +82,88 @@ body {
         background-color: #000000;
 
         background-image: url('images/home_background.png'); 
-
-        /* 2. Control image repetition (optional, but recommended) */
-        background-repeat: no-repeat; /* Prevents the image from tiling */
-
-        /* 3. Position the image (optional) */
-        background-position: center; /*Centers the image*/
-
-        /* 4. Scale the image (optional) */
+        background-repeat: no-repeat; 
+        background-position: center; 
         background-size: cover;
+
+        position: relative;
+
+        .home_texts{
+            /* border: 1px solid red; */
+            position: relative;
+            top: 110px;
+            left: 150px;
+            width: 60%;
+
+            
+            .main_details {
+                position: relative;
+                margin-top: 70px;
+
+                #personal_name {
+                    position: relative;
+                    top: -40px;
+                    left: -6px;
+                    font-size: 105px;
+                }
+
+                #personal_title {
+                    position: relative;
+                    top: -60px;
+                    font-weight: 400;
+                    font-size: 37px;
+                }
+            }
+
+            button {
+                all: unset;
+                margin: 40px 50px 0 0;
+
+                /* size */
+                width: 200px;
+                height: 70px;
+
+                /* spacing */
+                padding: 0 24px;
+
+                /* colors */
+                background-color: #43586E;
+                color: FBFDFF;
+
+                /* border */
+                border-radius: 12px;
+
+                /* text */
+                font-size: 28px;
+                font-weight: 600;
+
+                /* alignment */
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+
+                /* polish */
+                transition: background-color 0.2s ease, transform 0.1s ease;
+            }
+
+            #contact_button {
+                background-color: #515A5F;
+                font-weight: 350;
+
+                transition: background-color 0.2s ease, transform 0.1s ease;
+            }
+
+            button:hover, #contact_button:hover {
+                background-color: #C87273;   /* darker blue */
+                transform: translateY(-5px);  /* subtle lift effect */
+                
+            }
+
+
+
+        }
+        
     }
 }
+
 
